@@ -1,0 +1,118 @@
+.dice {
+    list-style: none;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    border: solid 5px #000;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    
+    display: inline-flex;
+    vertical-align: top;
+    margin: 5px;
+}
+
+
+.dice__point::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+/* The first */
+
+.dice_one {
+    justify-content: center;
+    align-items: center;
+}
+
+/* The second */
+.dice_two {
+    justify-content: space-between;
+  }
+  
+  .dice_two .dice__point:nth-child(1) {
+    align-self: flex-end;
+  }
+  
+/* The third */
+.dice_three {
+    justify-content: space-between;
+  }
+  
+  .dice_three .dice__point:nth-child(1) {
+    align-self: flex-end;
+  }
+  
+  .dice_three .dice__point:nth-child(2) {
+    align-self: center;
+  }
+
+/* The fourth */
+.dice_four {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  
+  .dice_four .dice__point {
+    width: 50%;
+  }
+  
+  .dice_four .dice__point:nth-child(even) {  
+    text-align: right;
+  }
+  
+/* The fifth */
+.dice_five {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+    
+.dice_five .dice__point:nth-child(3) {  
+    width: 100%;
+    text-align: center;
+}
+
+/* The sixth */
+
+.dice_six {
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.first-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    
+.one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
